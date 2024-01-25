@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+// Global vars
+$html-font-size: 16;
+
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+
+//Global functions
+@function rem($pxValue) {
+  @return #{$pxValue/ $html-font-size}rem;
+}
+
+//Global Styles
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    // Styles for Desktop
+    @media screen and (min-width: $breakpoint-tablet) {
+        font-size: rem(60);
+        line-height: rem(72);
+        letter-spacing: -.02rem;
+        font-weight: 700;
+    }
+
+    // Styles for Tablet
+    @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        font-size: rem(48);
+        line-height: rem(48);
+        letter-spacing: -.02rem;
+        font-weight: 700;
+    }
+
+    //styles for mobile
+    font-size: rem(36);
+    line-height: rem(40);
+    letter-spacing: -.02rem;
+    font-weight: 600;
+
+}
+
+h2 { 
+    // Styles for Desktop
+    @media screen and (min-width: $breakpoint-tablet) {
+        font-size: rem(36);
+        line-height: rem(40);
+        letter-spacing: -.02rem;
+        font-weight: 600;
+    }
+
+    //styles for mobile and tablet
+    font-size: rem(24);
+    line-height: rem(32);
+    letter-spacing: -.02rem;
+    font-weight: 600;
+}
+
+h3 { 
+    // Styles for Desktop
+    @media screen and (min-width: $breakpoint-tablet) {
+        font-size: rem(30);
+        line-height: rem(36);
+        letter-spacing: -.02rem;
+        font-weight: 600;
+    }
+        
+    //styles for mobile and tablet
+    font-size: rem(18);
+    line-height: rem(28);
+    letter-spacing: -.02rem;
+    font-weight: 600;
+}
