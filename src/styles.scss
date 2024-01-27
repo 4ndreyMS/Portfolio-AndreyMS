@@ -12,7 +12,6 @@ $html-font-size: 16;
 $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1024px;
 
-
 //Global functions
 @function rem($pxValue) {
   @return #{$pxValue/ $html-font-size}rem;
@@ -20,62 +19,74 @@ $breakpoint-tablet: 1024px;
 
 //Global Styles
 body {
-    font-family: "Inter", sans-serif;
-}
+  font-family: "Inter", sans-serif;
 
-h1 {
+  h1 {
     // Styles for Desktop
     @media screen and (min-width: $breakpoint-tablet) {
-        font-size: rem(60);
-        line-height: rem(72);
-        letter-spacing: -.02rem;
-        font-weight: 700;
+      font-size: rem(60);
+      line-height: rem(72);
+      letter-spacing: -0.02rem;
+      font-weight: 700;
     }
 
     // Styles for Tablet
     @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
-        font-size: rem(48);
-        line-height: rem(48);
-        letter-spacing: -.02rem;
-        font-weight: 700;
+      font-size: rem(48);
+      line-height: rem(48);
+      letter-spacing: -0.02rem;
+      font-weight: 700;
     }
 
     //styles for mobile
     font-size: rem(36);
     line-height: rem(40);
-    letter-spacing: -.02rem;
+    letter-spacing: -0.02rem;
     font-weight: 600;
+  }
 
-}
-
-h2 { 
+  h2 {
     // Styles for Desktop
     @media screen and (min-width: $breakpoint-tablet) {
-        font-size: rem(36);
-        line-height: rem(40);
-        letter-spacing: -.02rem;
-        font-weight: 600;
+      font-size: rem(36);
+      line-height: rem(40);
+      letter-spacing: -0.02rem;
+      font-weight: 600;
     }
 
     //styles for mobile and tablet
     font-size: rem(24);
     line-height: rem(32);
-    letter-spacing: -.02rem;
+    letter-spacing: -0.02rem;
     font-weight: 600;
-}
+  }
 
-h3 { 
+  h3 {
     // Styles for Desktop
     @media screen and (min-width: $breakpoint-tablet) {
-        font-size: rem(30);
-        line-height: rem(36);
-        letter-spacing: -.02rem;
-        font-weight: 600;
+      font-size: rem(30);
+      line-height: rem(36);
+      letter-spacing: -0.02rem;
+      font-weight: 600;
     }
-        
+
     //styles for mobile and tablet
     font-size: rem(18);
     line-height: rem(28);
-    letter-spacing: -.02rem;
+    letter-spacing: -0.02rem;
     font-weight: 600;
+  }
+
+  p {
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 1024px;
+  }
 }
