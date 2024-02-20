@@ -1,6 +1,17 @@
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-.nav{
+.nav-cont {
+  padding: 1rem 5rem;
+
+  .nav {
     gap: 24px;
+  }
+
+  .nav-split {
+    margin: 0 1.5rem;
+    border: 0.1rem;
+    height: 1.5rem;
+    background-color: #f3f4f6;
+  }
 }
