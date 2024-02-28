@@ -1,0 +1,18 @@
+@import "/src/styles/functions.scss";
+
+.avilable-dot {
+  background-color: #10b981;
+  width: 0.75rem;
+  height: 0.75rem;
+  display: block;
+  border-radius: 100rem;
+}
+
+.cont-info {
+  gap: rem(48);
+}
+
+.iconBox {
+  height: rem(24);
+  width: rem(24);
+}
