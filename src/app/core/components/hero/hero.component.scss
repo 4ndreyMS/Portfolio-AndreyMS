@@ -10,9 +10,24 @@
 
 .cont-info {
   gap: rem(48);
+  // TODO: MAKE THIS STYLE GLOBAL
+  button {
+    &:hover {
+      background-color: rgb(243 244 246);
+      border-radius: 4px;
+    }
+    transition-duration: 0.2s;
+    padding: 3px;
+    background: none;
+    border: none;
+  }
 }
 
 .iconBox {
   height: rem(24);
   width: rem(24);
+}
+
+.gh {
+  height: 1.3rem;
 }
